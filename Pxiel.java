@@ -15,9 +15,9 @@ class Pixel {
 	double[][] blackness_area;
 	int[][] brightness;
 
-	public int[][] GetBlackness() {
+	public int[][] GetBlackness(String file_name) {
 		try {
-			File input = new File("duck.jpg");
+			File input = new File(file_name);
 			image = ImageIO.read(input);
 			width = image.getWidth();
 			height = image.getHeight();

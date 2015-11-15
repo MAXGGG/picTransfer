@@ -1,3 +1,6 @@
+//Put picture within the same file
+//Output path need be entered manually 
+
 package picTransfer;
 
 
@@ -11,7 +14,7 @@ public class Drawing {
 		try {
 			String content = "";
 			Pixel pixel = new Pixel();
-			int[][] brightness = pixel.GetBlackness();
+			int[][] brightness = pixel.GetBlackness("neko.png");
 			for(int[]a:brightness){
 				for(int b:a){
 					if(b!=0){
@@ -41,7 +44,7 @@ public class Drawing {
 				content=content+"\n";
 			}
 			
-
+			//change the output path first
 			File file = new File("/Users/Yin/Documents/Development/workspace/picTransfer/filename.txt");
 
 			// if file doesnt exists, then create it
