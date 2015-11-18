@@ -1,2 +1,2 @@
 # picTransfer
-Notice only works well with high resolution file, but output has no size limited, so it might exceed the size of ur screen, better use a high resolution pic with small size.
+Notice only works well with high resolution file, but output has no size limited, so if u have a good txt file reader like mac one, u can zoom in to have a better look.

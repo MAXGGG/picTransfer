@@ -14,11 +14,13 @@ public class Drawing {
 		try {
 			String content = "";
 			Pixel pixel = new Pixel();
-			int[][] brightness = pixel.GetBlackness("neko.png");
+			int[][] brightness = pixel.GetBlackness("ince.jpg");
+			int count = brightness.length*brightness[0].length;
 			for(int[]a:brightness){
 				for(int b:a){
-					if(b!=0){
-					System.out.println(b);}
+					
+					System.out.println(count);
+					count--;
 					if(b==9){
 						content = content+" ";
 					}else if(b==8){
